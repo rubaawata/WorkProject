@@ -22,7 +22,7 @@ class DistanceController extends Controller
     }*/
 
     public function distanceBetweenTwoChosenPoint($x1, $x2, $y1, $y2) {
-        $distance = $this->calcDistanceBetweenTwoPoint($x1, $x2, $y1, $y2);
+        $distance = $this->calcDistanceBetweenTwoPoint($x1, $y1, $x2, $y2);
         return response()->json(array('msg'=> $distance), 200);
     }
 

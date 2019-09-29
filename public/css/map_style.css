@@ -1,0 +1,35 @@
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.button_img {
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    border: 1px solid #007BFF;
+    background-image: radial-gradient(circle at center , rgb(225, 237, 250) 100%, transparent 100%);
+    background-repeat: no-repeat;
+    transition: background-size 0s, color 0s;
+    background-size: 0 0;
+    background-position: 50% 50%;
+    border-radius: 30px;
+    display: inline-block;
+    margin-left: 30%;
+}
+
+.button {
+    margin-bottom: 20px;
+}
+.button_img:hover {
+    background-size: 200% 200%;
+    color: rgb(225, 237, 250);
+}
+
+.button_name {
+    text-align:center;
+    color: #007BFF;
+}
+
+.result_table {
+    text-align: center;
+}
