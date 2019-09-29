@@ -40,7 +40,11 @@ function initMap() {
                             $("#firstYPointCoordinator").html(addresses[i].pointy);
                             $("#firstPointHeader").html(addresses[i].provider.name);
                             $("#firstPointDescription").html(addresses[i].address_description);
-                            console.log(document.getElementsByClassName('test'));
+                            $("#point_a_1").html(addresses[i].provider.name);
+                            $("#point_a_2").html(addresses[i].provider.name);
+                            document.getElementById('firstPoint').style.color = 'black';
+                            document.getElementById('point_a_1').style.color = 'black';
+                            document.getElementById('point_a_2').style.color = 'black';
                         }
                         else
                         {
@@ -48,6 +52,11 @@ function initMap() {
                             $("#secondYPointCoordinator").html(addresses[i].pointy);
                             $("#secondPointHeader").html(addresses[i].provider.name);
                             $("#secondPointDescription").html(addresses[i].address_description);
+                            $("#point_b_1").html(addresses[i].provider.name);
+                            $("#point_b_2").html(addresses[i].provider.name);
+                            document.getElementById('secondPoint').style.color = 'black';
+                            document.getElementById('point_b_1').style.color = 'black';
+                            document.getElementById('point_b_2').style.color = 'black';
                         }
                         j=j+1;
                     }

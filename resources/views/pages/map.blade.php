@@ -5,20 +5,22 @@
     <div>
         <div class="row" style="width:100%;height:800px;">
             <div class="col-lg-3">
-                <div id="firstPoint" style="padding:3%">
-                    <font id="firstPointHeader" size="6"></font>
-                    <br>
-                    <small id="firstXPointCoordinator"></small>, <small id="firstYPointCoordinator"></small>
-                    <p id="firstPointDescription"></p>
+                <div class="points">
+                    <div id="firstPoint" style="padding:3%">
+                        <font id="firstPointHeader" size="6">point A</font>
+                        <br>
+                        <small id="firstXPointCoordinator">xx.xxxx</small>, <small id="firstYPointCoordinator">yy.yyyy</small>
+                        <p id="firstPointDescription">point A description</p>
+                    </div>
+                    <hr>
+                    <div id="secondPoint" style="padding:3%">
+                        <font id="secondPointHeader" size="6">point B</font>
+                        <br>
+                        <small id="secondXPointCoordinator">xx.xxxx</small>, <small id="secondYPointCoordinator">yy.yyyy</small>
+                        <p id="secondPointDescription" >point B description</p>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-                <div id="secondPoint" style="padding:3%">
-                    <font id="secondPointHeader" size="6"></font>
-                    <br>
-                    <small id="secondXPointCoordinator"></small>, <small id="secondYPointCoordinator"></small>
-                    <p id="secondPointDescription" ></p>
-                </div>
-                <hr>
                 <div class="row">
                     <div class="button col-lg-6">
                         <div class="button_img" onclick="onePoint()" ><img src="{{asset('img/binoculars.png')}}"></div>
@@ -44,19 +46,19 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>pointa</td>
-                                <td>pointb</td>
-                                <td id="Two">0 km</td>
+                                <td id="point_a_1" class="placeholder">pointa</td>
+                                <td id="point_b_1" class="placeholder">pointb</td>
+                                <td id="Two" class="placeholder">0 m</td>
                             </tr>
                             <tr>
                                 <td>User</td>
-                                <td>pointa</td>
-                                <td id="OneA">0 km</td>
+                                <td id="point_a_2" class="placeholder">pointa</td>
+                                <td id="OneA" class="placeholder">0 m</td>
                             </tr>
                             <tr>
                                 <td>User</td>
-                                <td>pointb</td>
-                                <td id="OneB">0 km</td>
+                                <td id="point_b_2" class="placeholder">pointb</td>
+                                <td id="OneB" class="placeholder">0 m</td>
                             </tr>
                         </tbody>
                     </table>
@@ -64,10 +66,11 @@
             </div>
         <div class="col-lg-9" id="map" style="width:100%;height:100%"></div>
     </div>
+
+    <script src="{{ url('js/map.js')}}"></script>
+    <script src="{{ url('js/map_page.js')}}"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBubXXpQIxBhV8TBgWlxD-4lqR3BjUxnxs&callback=initMap">
     </script>
 
-    <script src="{{ url('/js/map.js')}}"></script>
-    <script src="{{ url('/js/map_page.js')}}"></script>
 @endsection

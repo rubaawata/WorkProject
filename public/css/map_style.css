@@ -20,6 +20,7 @@ body {
 .button {
     margin-bottom: 20px;
 }
+
 .button_img:hover {
     background-size: 200% 200%;
     color: rgb(225, 237, 250);
@@ -32,4 +33,17 @@ body {
 
 .result_table {
     text-align: center;
+}
+
+.points {
+    padding-left: 20px;
+    width: 100%;
+}
+
+.placeholder {
+    color: #999;
+}
+
+#firstPoint, #secondPoint {
+    color: #999;
 }
